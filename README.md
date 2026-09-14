@@ -1,6 +1,6 @@
 # AI-Competition-in-SHTU
 ## 前话
-&emsp;&emsp;GitHub项目不是很熟悉（原谅我这个菜鸡），好像上传不了25mb以上的文件，所以后面的预训练权重和数据集需要复现的用户再去下载，然后需要说明的是本方案训练使用了一块A6000显卡，显存占用率达到将近48G，如果用户运行代码出现cuda out of memory情况，可以把batchsize从32降低到16或者8，如果想实现大batchsize效果减少由小batchsize带来的训练时长增加，可以在本方案基础上增加gradient accumulation方案。
+&emsp;&emsp;预训练权重和数据集需要复现的用户再去下载，然后需要说明的是本方案训练使用了一块A6000显卡，显存占用率达到将近48G，如果用户运行代码出现cuda out of memory情况，可以把batchsize从32降低到16或者8，如果想实现大batchsize效果减少由小batchsize带来的训练时长增加，可以在本方案基础上增加gradient accumulation方案。
 ## 环境搭建
 &emsp;&emsp;代码运行环境是python3.10，cuda版本是12.2
 
